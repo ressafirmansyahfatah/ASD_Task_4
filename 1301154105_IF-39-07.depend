@@ -1,0 +1,151 @@
+# depslib dependency file v1.0
+1442857059 source:c:\users\undeed\documents\cpp\musicplayer\main.cpp
+	<iostream>
+	"list.h"
+	<conio.h>
+
+1442856308 source:c:\users\undeed\documents\cpp\musicplayer\list.cpp
+	<iostream>
+	<string>
+	<windows.h>
+	"list.h"
+
+1442856316 c:\users\undeed\documents\cpp\musicplayer\list.h
+	<string>
+	<windows.h>
+
+1442895478 source:f:\musicplayer\list.cpp
+	<iostream>
+	"list.h"
+
+1442905068 f:\musicplayer\list.h
+	<string>
+	<windows.h>
+
+1442897104 source:f:\musicplayer\main.cpp
+	<iostream>
+	"list.h"
+	"player.h"
+	<conio.h>
+
+1442911714 f:\musicplayer\player.h
+	"list.h"
+
+1442905454 source:f:\musicplayer\player.cpp
+	<iostream>
+	<string>
+	<windows.h>
+	"list.h"
+	"player.h"
+
+1442895478 source:c:\users\dee\documents\github\task_4\list.cpp
+	<iostream>
+	"list.h"
+
+1442905068 c:\users\dee\documents\github\task_4\list.h
+	<string>
+	<windows.h>
+
+1442906110 source:c:\users\dee\documents\github\task_4\main.cpp
+	<iostream>
+	"list.h"
+	"player.h"
+	<conio.h>
+
+1442911714 c:\users\dee\documents\github\task_4\player.h
+	"list.h"
+
+1442905454 source:c:\users\dee\documents\github\task_4\player.cpp
+	<iostream>
+	<string>
+	<windows.h>
+	"list.h"
+	"player.h"
+
+1475020798 source:d:\folder kuliah\asd\asd_task_4-master\list.cpp
+	"list.h"
+
+1475735156 d:\folder kuliah\asd\asd_task_4-master\list.h
+	<string>
+	<windows.h>
+	<iostream>
+
+1475020798 source:d:\folder kuliah\asd\asd_task_4-master\main.cpp
+	"player.h"
+
+1475735156 d:\folder kuliah\asd\asd_task_4-master\player.h
+	"list.h"
+	<cstdlib>
+
+1474952398 source:c:\users\asus a450ca\downloads\asd_task_4-master\asd_task_4-master\main.cpp
+	"player.h"
+
+1476012930 c:\users\asus a450ca\downloads\asd_task_4-master\asd_task_4-master\player.h
+	"list.h"
+	<cstdlib>
+
+1476012648 c:\users\asus a450ca\downloads\asd_task_4-master\asd_task_4-master\list.h
+	<string>
+	<windows.h>
+	<iostream>
+
+1476012780 source:c:\users\asus a450ca\downloads\asd_task_4-master\asd_task_4-master\list.cpp
+	"list.h"
+
+1476012986 source:c:\users\asus a450ca\downloads\asd_task_4-master\asd_task_4-master\player.cpp
+	"player.h"
+
+1476093452 source:d:\folder kuliah\asd\new folder\asd_task_4-master\list.cpp
+	"list.h"
+
+1476081048 d:\folder kuliah\asd\new folder\asd_task_4-master\list.h
+	<string>
+	<windows.h>
+	<iostream>
+
+1476093318 source:d:\folder kuliah\asd\new folder\asd_task_4-master\player.cpp
+	"player.h"
+
+1476081330 d:\folder kuliah\asd\new folder\asd_task_4-master\player.h
+	"list.h"
+	<cstdlib>
+
+1476093175 source:d:\folder kuliah\asd\new folder\asd_task_4-master\main.cpp
+	"player.h"
+
+1476034251 source:c:\users\kukuh rahingga p\downloads\asd_task_4-master_regita anjani_1301154477_if-39-01\asd_task_4-master_regita anjani_1301154477_if-39-01\list.cpp
+	"list.h"
+
+1476034251 c:\users\kukuh rahingga p\downloads\asd_task_4-master_regita anjani_1301154477_if-39-01\asd_task_4-master_regita anjani_1301154477_if-39-01\list.h
+	<string>
+	<windows.h>
+	<iostream>
+
+1476034322 source:c:\users\kukuh rahingga p\downloads\asd_task_4-master_regita anjani_1301154477_if-39-01\asd_task_4-master_regita anjani_1301154477_if-39-01\main.cpp
+	"player.h"
+
+1476034251 c:\users\kukuh rahingga p\downloads\asd_task_4-master_regita anjani_1301154477_if-39-01\asd_task_4-master_regita anjani_1301154477_if-39-01\player.h
+	"list.h"
+	<cstdlib>
+
+1476034251 source:c:\users\kukuh rahingga p\downloads\asd_task_4-master_regita anjani_1301154477_if-39-01\asd_task_4-master_regita anjani_1301154477_if-39-01\player.cpp
+	"player.h"
+
+1476034251 source:f:\kuliah\task\ressa firmansyah fatah_1301154105_if-39-01\list.cpp
+	"list.h"
+
+1476034251 f:\kuliah\task\ressa firmansyah fatah_1301154105_if-39-01\list.h
+	<string>
+	<windows.h>
+	<iostream>
+
+1476034322 source:f:\kuliah\task\ressa firmansyah fatah_1301154105_if-39-01\main.cpp
+	"player.h"
+
+1476034251 f:\kuliah\task\ressa firmansyah fatah_1301154105_if-39-01\player.h
+	"list.h"
+	<cstdlib>
+
+1476034629 source:f:\kuliah\task\ressa firmansyah fatah_1301154105_if-39-01\player.cpp
+	"player.h"
+

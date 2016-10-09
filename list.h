@@ -24,37 +24,28 @@ struct music
 typedef music infotype;
 typedef struct elmlist *address;
 
-/**
-* IMPLEMENT CIRCULAR DOUBLE LINKED LIST
-*/
-
-struct elmlist{
-    //------------- your code here -----------
-    
-	
-    //----------------------------------------
+struct elmlist
+{
+    infotype info;
+    address next;
+    address prev;
 };
 
-struct List{
-    //------------- your code here -----------
-    
-	
-    //----------------------------------------
+struct List
+{
+        address first;
+        address last;
 };
 
 void createList(List &);
-
 address alokasi(infotype );
 void dealokasi(address &);
-
 void insertFirst(List &, address );
 void insertLast(List &, address );
-void insertAfter(address , address);
-
+void insertAfter(List &L,address , address);
 void deleteFirst(List &, address &);
 void deleteLast(List &, address &);
-void deleteAfter(address, address &);
-
+void deleteAfter(List &L,address, address &);
 address findElm(List, infotype );
 
 

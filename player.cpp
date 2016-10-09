@@ -1,81 +1,90 @@
 #include "player.h"
 
-void inputNewSong(infotype &x){
-	/**
-	* PR : meminta input user untuk mengisi nama dan lokasi file
-	* FS : infotype x terisi nama dan lokasi file
-	*/
-	
-    cout<<"input name song (.wav) : ";
-    cin>>x.name;
-    cout<<"input song location "<<endl<<"(write - for default location) :";
-    cin>>x.location;
-    if(x.location=="-"){x.location="";}
-}
 
-
-void printInfo(List L){
-	/**
-	* PR : menampilkan informasi ID, nama, dan lokasi file
-	*/
-	
-    address Q = First(L);
-    while(Q != NULL)
-    {
-        cout<<"name : "<<Info(Q).name<<endl
-            <<"ID: "<<Info(Q).ID<<endl;
-            <<"location: "<<Info(Q).location<<endl;
-        Q = Next(Q);
+void inputNewSong(infotype &x)
+{
+    cout << "Input nama lagu (.wav) : ";
+    cin >> x.name;
+    cout << "Masukkan lokasi simpan " << endl << "(write - for default location) :";
+    cin >> x.location;
+    if(x.location=="-"){
+        x.location="";
     }
 }
 
 
-void playSong(address P){
-	/**
-	* PR : memainkan lagu yang ditunjuk oleh pointer P
-	*/
-	
+void printInfo(List L)
+{
+    address Q = First(L);
+    do
+    {
+        cout<<"Nama     : "<<Info(Q).name << endl;
+        cout<<"ID       : "<<Info(Q).ID << endl;
+        cout<<"Lokasi   : "<<Info(Q).location << endl;
+        Q = Next(Q);
+    }while(Q != L.first);
+}
+
+
+void playSong(address P)
+{
     string filename = Info(P).location+Info(P).name;
-    cout<<"playing "<<filename<<endl;
+    cout << "playing " << filename << endl;
     PlaySound(TEXT(filename.c_str()), NULL, SND_FILENAME);
     _sleep(1000); //delay 1 second
 }
 
 
-void playNext(address &P){
-	/**
-	* PR : memainkan file lagu pada elemen setelah P
-	* FS : P menunjuk next lagu dan lagu dimainkan
-	*/
+void playNext(address &P)
+{
     P = Next(P);
     playSong(P);
 }
 
 
-void playPrev(address &P){	
-	/**
-	* PR : memainkan file lagu pada elemen sebelum P
-	* FS : P menunjuk prev lagu dan lagu dimainkan
-	*/
-	//-------------your code here-------------
-
-
-    //----------------------------------------
-	
+void playPrev(address &P)
+{
+P = Prev(P);
+    playSong(P);
 }
 
-void shuffleList(List &L){
-	/**
-	* PR : mengacak isi (elemen) dari list L
-	* FS : isi (elemen) dari list teracak
-	*/
-	//-------------your code here-------------
+void shuffleList(List &L)
+{
+    List L2;
+    int i;
+    createList(L2);
+    while(L.first != NULL){
+        address p = L.first;
+        address q =L.first;
+        int nPlayer;
+        do
+        {
+            nPlayer;
+            q = Next(q);
+        }
+        while(q != L.first);
+        for(int i=0; i<= rand() % nPlayer;i++){
+            p = Next(p);
+        }
+        if(p == L.first){
+            deleteFirst(L,p);
+            insertLast(L2,p);
+        }else if(p == L.last)
+        {
+            deleteLast(L,p);
+            insertLast(L2,p);
+        }else
+        {
+            deleteAfter(L,Prev(p),p);
+            insertLast(L2,p);
+        }
+        L=L2;
 
-
-    //----------------------------------------	
+    }
 }
 
-void sortList(List &L, int condition){
+void sortList(List &L, int condition)
+{
 	/**
 	* PR : mengurutkan isi (elemen) dari list L berdasarkan kondisi
 	* FS : isi (elemen) dari list L terurut
@@ -85,19 +94,19 @@ void sortList(List &L, int condition){
 	//-------------your code here-------------
 
 
-    //----------------------------------------	
-	
+    //----------------------------------------
+
 }
 
-void playRepeat(List &, int n){	
-	/**
-	* PR : memainkan seluruh lagu di dalam list 
-	*      dari lagu pertama hingga terakhir sebanyak n kali
-	*/
-	//-------------your code here-------------
-
-
-    //----------------------------------------	
+void playRepeat(List &L, int n)
+{
+    address P=L.first;
+    for (int i=0;i<n;i++){
+        playSong;
+        do{
+            playNext;
+        }while(P!=L.first);
+    }
 }
 
 void deleteSong(List &L){
@@ -110,6 +119,6 @@ void deleteSong(List &L){
 	//-------------your code here-------------
 
 
-    //----------------------------------------	
-	
+    //----------------------------------------
+
 }
